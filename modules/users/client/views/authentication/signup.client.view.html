@@ -18,6 +18,10 @@
           </div>
         </div>
         <div class="form-group" show-errors>
+          <label for="currentLocation">Post Code</label>
+          <input type="text" id="currentLocation" name="currentLocation" class="form-control" ng-model="vm.credentials.currentLocation" placeholder="Current Location">
+        </div>
+        <div class="form-group" show-errors>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" class="form-control" ng-model="vm.credentials.email" placeholder="Email" lowercase required>
           <div ng-messages="vm.userForm.email.$error" role="alert">

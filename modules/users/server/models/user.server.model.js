@@ -64,6 +64,11 @@ var UserSchema = new Schema({
     default: '',
     validate: [validateLocalStrategyProperty, 'Please fill in your last name']
   },
+  currentLocation: {
+    type: String,
+    trim: true,
+    default: '00000'
+  },
   displayName: {
     type: String,
     trim: true

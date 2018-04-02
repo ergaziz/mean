@@ -24,6 +24,7 @@ exports.update = function (req, res) {
   // For security purposes only merge these parameters
   user.firstName = req.body.firstName;
   user.lastName = req.body.lastName;
+  user.currentLocation = req.body.currentLocation;
   user.displayName = user.firstName + ' ' + user.lastName;
   user.roles = req.body.roles;
 

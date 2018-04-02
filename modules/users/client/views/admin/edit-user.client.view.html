@@ -20,6 +20,10 @@
           </div>
         </div>
         <div class="form-group" show-errors>
+          <label for="currentLocation">Post Code</label>
+          <input type="text" id="currentLocation" name="currentLocation" class="form-control" ng-model="vm.user.currentLocation" placeholder="Current Location" />
+        </div>
+        <div class="form-group" show-errors>
           <label class="control-label" for="roles">Roles</label>
           <div class="controls">
             <input class="form-control" type="text" name="roles" ng-model="vm.user.roles" id="roles" ng-list required />
